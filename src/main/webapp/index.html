@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="resources/css/loginStyle.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+</head>
+<body>
+	<div class="login-container">
+		<form method="post" action="/Project1/api/forwarding/login">
+			<div id = "title">Reimbursement Log In</div> <br> <br>
+			<label>Username</label><br>
+			<input type="text" id = "username" name="username" /> <br><br>
+			<label>Password</label><br>
+			<input type="password" id = "password" name="password" /> <br><br>
+			<button type="submit" id = "loginSubmit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

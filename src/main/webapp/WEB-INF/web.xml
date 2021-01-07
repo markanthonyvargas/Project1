@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Project1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ExampleServlet</display-name>
+    <servlet-name>ExampleServlet</servlet-name>
+    <servlet-class>com.reimbursement.servlets.ExampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExampleServlet</servlet-name>
+    <url-pattern>/api/forwarding/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HelperSessionServlet</display-name>
+    <servlet-name>HelperSessionServlet</servlet-name>
+    <servlet-class>com.reimbursement.servlets.HelperSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelperSessionServlet</servlet-name>
+    <url-pattern>/logout/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxMasterServlet</display-name>
+    <servlet-name>AjaxMasterServlet</servlet-name>
+    <servlet-class>com.reimbursement.servlets.AjaxMasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxMasterServlet</servlet-name>
+    <url-pattern>/api/ajax/*</url-pattern>
+  </servlet-mapping>
+</web-app>

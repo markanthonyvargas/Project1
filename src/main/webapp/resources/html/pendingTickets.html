@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pending Tickets</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+</head>
+<body>
+	<h1 style="text-align: center">Pending Tickets</h1>
+	<ol id="myReimbList" hidden></ol>
+	<table id="myReimbTable" class="table">
+		<thead>
+			<tr>
+				<th scope="col">Reimbursement ID</th>
+				<th scope="col">Amount</th>
+				<th scope="col">Submit Date</th>
+				<th scope="col">Resolve Date</th>
+				<th scope="col">Description</th>
+				<th scope="col">Author</th>
+				<th scope="col">Resolver</th>
+				<th scope="col">Status ID</th>
+				<th scope="col">Type ID</th>
+			</tr>
+		</thead>
+
+
+		<tbody id="reimbTableBody">
+
+
+		</tbody>
+	</table>
+	<div class="newreimbursement-container" style="text-align: center">
+		<form method="POST" , action="/Project1/api/forwarding/alterReimb">
+			<label>Enter reimbursement ID</label><br> <input type="text"
+				id="ID" name="ID" /> <select id="status" name="status">
+				<option value=""></option>
+				<option value="approve">Approve</option>
+				<option value="deny">Deny</option>
+			</select>
+			<button type="submit" id="statusSubmit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<div>
+		<br>
+		<form style="text-align: center"
+			action="/Project1/resources/html/adminHome.html">
+			<!-- <input type="submit" value="Back to home page" />-->
+			<button type="submit" class="btn btn-primary">Back to home
+				page</button>
+		</form>
+	</div>
+	<script type="text/javascript"
+		src="/Project1/resources/javascript/viewPending.js"></script>
+</body>
+</html>

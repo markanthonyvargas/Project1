@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New Reimbursement Request</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+</head>
+<body style = "text-align: center">
+	<h1>New Reimbursement</h1>
+	<div class="newreimbursement-container">
+		<form method="POST" , action="/Project1/api/forwarding/newReimb">
+			<label>Enter the amount of your reimbursement</label><br> <input
+				type="text" id="amount" name="amount" /> <br> <br> <label>Description
+				of reimbursement</label><br> <input type="text" id="description"
+				name="description" /> <br> <br> <label>Reimbursement
+				Type</label> <br> <select id="types" name="types">
+				<option value="lodging">Lodging</option>
+				<option value="travel">Travel</option>
+				<option value="food">Food</option>
+				<option value="other">Other</option>
+			</select> <br>
+			<br>
+			<button type="submit" id="loginSubmit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
