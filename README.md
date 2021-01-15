@@ -32,6 +32,8 @@ To-do list:
 
 Once the project is ready and the server is running, visit http://localhost:9002/Project1/ to access the website login page. You may use either the manager credentials to view the website from a manager perspective or user credentials to view the website from a user perspective.
 
+NOTE: For security purpose this project uses system enviornment variables for JDBC. You will have to enter your own credentials for your database inside the ReimbDaoImpl.java file.
+
 Manager Credentials:
 username: defaultManager
 password: p4ssw0rd
