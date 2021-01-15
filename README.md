@@ -8,7 +8,8 @@ The ERS Reimbursement System is a project that simulates a real-world employee r
 
 * Java JDK - Version 8
 * Maven
-* 
+* JDBC
+* HTML/CSS/JavaScript/Bootstrap
 
 ## Features
 
@@ -23,24 +24,20 @@ To-do list:
 * Add Logging
 
 ## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
+1. Clone this repository. Use "git clone https://github.com/markanthonyvargas/Project1.git" in your terminal to clone this project to a destination on your personal machine.
+2. Once this project is cloned you will need to import this project into your IDE. In STS you will import an existing Maven project.
+3. Once imported, you will have to configure your IDE so that your project uses An Apache Tomcat V9 server. Make sure this server is using port 9002.
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+Once the project is ready and the server is running, visit http://localhost:9002/Project1/ to access the website login page. You may use either the manager credentials to view the website from a manager perspective or user credentials to view the website from a user perspective.
 
-## Contributors
+NOTE: For security purpose this project uses system enviornment variables for JDBC. You will have to enter your own credentials for your database inside the ReimbDaoImpl.java file.
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+Manager Credentials:
+username: defaultManager
+password: p4ssw0rd
 
-## License
-
-This project uses the following license: [<license_name>](<link>).
+User credentials:
+username: defaultEmployee
+password: p4ssw0rd
