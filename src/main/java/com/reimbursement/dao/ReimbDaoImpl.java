@@ -20,9 +20,12 @@ public class ReimbDaoImpl implements ReimbDao {
 	final static Logger loggy = Logger.getLogger(ReimbDaoImpl.class);
 	
 	// database information
-	public static String url = "jdbc:postgresql://database-1.cjnmggtxpdlq.us-west-1.rds.amazonaws.com/ersDB";
-	public static String username = "AWSDatabase";
-	public static String password = "p4ssw0rd";
+	public static String url = "jdbc:postgresql://" + System.getenv("AWSDB") + "/ersDB";
+			//"#{'jdbc:postgresql://'+systemEnvironment['AWSDB']+'/ersDB'}";
+	public static String username = System.getenv("AWSUSE");
+			//"#{systemEnvironment['AWSUSE']}";
+	public static String password = System.getenv("AWSPASS");
+			//"#{systemEnvironment['AWSPASS']}";
 
 	static {
 		try {
