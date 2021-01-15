@@ -9,6 +9,7 @@ The ERS Reimbursement System is a project that simulates a real-world employee r
 * Java JDK - Version 8
 * Maven
 * JDBC
+* HTML/CSS/JavaScript/Bootstrap
 
 ## Features
 
